@@ -1,0 +1,32 @@
+lr: 5e-4
+num_envs: 1024
+num_steps: 128
+total_timesteps: 1e10
+update_epochs: 4
+num_minibatches: 4
+gamma: 0.99
+gae_lambda: 0.95
+clip_eps: 0.2
+ent_coef: 0.01
+vf_coef: 0.5
+max_grad_norm: 0.5
+env_name: "hanabi"
+env_kwargs: {num_agents: 3}
+anneal_lr: False
+num_players: 3
+
+bc_policy:
+  weights_path: ''
+  config_path: ''
+  critic_features: 1
+
+# BR-BC Annealing
+anneal_horizon: 6e9
+anneal_start: 1e9
+
+# WandB Params
+wandb_mode: disabled
+project: null
+wandb_name: null
+
+save_path: null

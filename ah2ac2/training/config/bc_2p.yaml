@@ -1,0 +1,38 @@
+tune: False
+seed: 0 # Note: If more than one seed, this seed will be split into num_seeds
+num_seeds: 1
+
+# Optimization config
+num_epochs: 50
+lr_final: 0.0001
+lr_initial: 0.005
+
+# Network Config
+preprocessing_features: [ 1024 ]
+lstm_features: [ 512 ]
+postprocessing_features: [ 256 ]
+action_dim: 21
+dropout: 0.5
+act_fn: 'gelu'
+
+# Data Config
+train_data_path: "../datasets/data/2_player_games_train_1k.safetensors"
+val_data_path: "../datasets/data/2_player_games_val.safetensors"
+should_augment_data: True  # Color permutations
+batch_size: 128
+
+# Testing Config
+self_play_eval_num_games: 5000
+
+# Wandb Params
+run_name: null  # NOTE: Seed will be added to the beginning, always.
+project_name: null
+use_wandb: False
+
+# Limited Data Regime Config - Subset of dataset in 'train_data_path' will be used.
+limited_data_ratio: null # null for NO limited data regime.
+limited_data_regime_games: null # null for NO limited data regime.
+
+# Checkpointing
+save_path: null
+save_best_val_path: null

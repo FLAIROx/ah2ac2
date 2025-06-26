@@ -1,0 +1,8 @@
+wandb/
+tmp/
+outputs/
+results/
+models/
+data/
+checkpoints/
+obl/

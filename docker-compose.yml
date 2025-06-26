@@ -1,0 +1,19 @@
+services:
+  ah2ac2-bash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USE_CUDA: ${USE_CUDA:-false}
+        MYUSER: ${MYUSER:-myuser}
+        UID: ${UID:-1000}
+    image: ah2ac2:latest
+    volumes:
+      - .:/home/${MYUSER}
+    environment:
+      NVIDIA_VISIBLE_DEVICES: 0
+      MYUSER: ${MYUSER:-myuser}
+    shm_size: 20G
+    runtime: nvidia
+    tty: true
+    command: /bin/bash

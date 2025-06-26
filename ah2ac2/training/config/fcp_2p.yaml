@@ -1,0 +1,35 @@
+lr: 5e-4
+num_envs: 1024
+num_steps: 128
+total_timesteps: 1e10
+fc_dim_size: 128
+gru_hidden_dim: 128
+update_epochs: 4
+num_minibatches: 4
+gamma: 0.99
+gae_lambda: 0.95
+clip_eps: 0.2
+ent_coef: 0.01
+vf_coef: 0.5
+max_grad_norm: 0.5
+activation: "relu"
+env_name: "hanabi"
+env_kwargs: {}
+anneal_lr: True
+seed: 30
+
+fcp_population:
+  population_directory: '../models/fcp_1k/fcp_population/2p'
+  critic_features: 1
+
+# BR-BC Annealing
+anneal_horizon: 0
+anneal_start: 0
+
+# WandB Params
+wandb_mode: disabled
+project: null
+wandb_name: null
+
+save_path: '../models/fcp_1k/2p'
+num_players: 2

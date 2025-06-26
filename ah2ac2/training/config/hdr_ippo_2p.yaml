@@ -1,0 +1,32 @@
+network:
+  weights_checkpoint_path: '../models/bc_1k/epoch18_seed1_valacc0.467_2p.safetensors'
+  config_checkpoint_path: '../models/bc_1k/epoch18_seed1_valacc0.467_2p.yaml'
+  critic_features: 512
+
+# Testing
+num_test_envs: 512
+
+# IPPO Config
+num_players: 2
+lr_linear_schedule: True
+lr: 0.0005
+num_envs: 1024
+num_steps: 128
+total_timesteps: 1e10
+update_epochs: 4
+num_minibatches: 4
+gamma: 0.99
+gae_lambda: 0.95
+clip_eps: 0.2
+ent_coef: 0.001
+vf_coef: 0.5
+max_grad_norm: 0.5
+bc_policy_kl_weight: 0.25
+
+wandb_mode: disabled
+wandb_name: null
+wandb_project: null
+
+# Checkpointing
+save_last_policy: false
+save_path: null

@@ -1,0 +1,91 @@
+site_name: Ad-Hoc Human-AI Coordination Challenge (AH2AC2) Docs
+theme:
+  logo: assets/AH2AC2_logo_transparent.png
+  favicon: assets/AH2AC2_logo_transparent.png
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: white
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: white
+      accent: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+  # Font configuration
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Features for a prettier UI
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - Datasets:
+    - Introduction: datasets/index.md
+    - Data Details: datasets/details.md
+    - Dataset Usage Guide: datasets/classes.md
+    - "Tutorial: Unrolling in JaxMARL": datasets/tutorial.md
+  - Evaluation:
+    - Introduction: evaluation/index.md
+    - Evaluation Guide: evaluation/guide.md
+    - Evaluation API: evaluation/api.md
+  - API Reference:
+    - "Evaluation Space": api_reference/evaluation_space.md
+    - "Evaluation Environment": api_reference/evaluation_environment.md
+
+# Additional plugins (optional)
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_signature_annotations: true
+            members_order: source
+            filters: ["!^_[^_]"]
+            group_by_category: false
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.blocks.admonition:
+      types:
+      - note
+      - attention
+      - caution
+      - danger
+      - error
+      - tip
+      - hint
+      - warning
+      - info
+      - check
+ 
