@@ -1,8 +1,10 @@
 # Ad-Hoc Human-AI Coordination Challenge (AH2AC2) 🚀
 
+### <b>Update: AH2AC2 was accepted @ ICML 2025 as a spotlight poster!</b> 🎆
+
 📌 **Register for the Challenge:** [ah2ac2.com](https://ah2ac2.com)  
 🏅 **Public Leaderboard:** [ah2ac2.com](https://ah2ac2.com)  
-📄 **Research Paper:** _Link to Paper Coming Soon!_  
+📄 **Research Paper:** [ArXiv](https://arxiv.org/abs/2506.21490)  
 📚 **Docs:** [docs.ah2ac2.com](https://docs.ah2ac2.com)
 
 

@@ -22,18 +22,24 @@ The challenge emphasizes data-efficient methods and uses human proxy agents for 
 
 For a detailed explanation of the challenge, including methodology and baseline results, please refer to our research paper.
 
-📄 **Research Paper:** [Link to Paper Coming Soon!]
+📄 **Research Paper:** [ArXiv](https://arxiv.org/abs/2506.21490)
 
 ## Resources
-
 *   🏆 **Public Leaderboard:** [ah2ac2.com](https://ah2ac2.com)
 *   🐍 **Codebase:** [View on GitHub](https://github.com/FLAIROx/AH2AC2)
 *   🤗 **Dataset:** [Download from Hugging Face](https://huggingface.co/datasets/placeholder/ah2ac2-dataset)
-*   📄  **Research Paper:** [Link to Paper Coming Soon!]
+*   📄  **Research Paper:** [ArXiv](https://arxiv.org/abs/2506.21490)
 
 
 
 ## Citation
 ```text
-Coming Soon!
+@inproceedings{
+    dizdarevic2025adhoc,
+    title={Ad-Hoc Human-{AI} Coordination Challenge},
+    author={Tin Dizdarevi{\'c} and Ravi Hammond and Tobias Gessler and Anisoara Calinescu and Jonathan Cook and Matteo Gallici and Andrei Lupu and Jakob Nicolaus Foerster},
+    booktitle={Forty-second International Conference on Machine Learning},
+    year={2025},
+    url={https://openreview.net/forum?id=FuGps5Zyia}
+}
 ```
